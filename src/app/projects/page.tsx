@@ -3,7 +3,7 @@ import ProjectCard from '../../components/ProjectCard';
 const projects = [
 {
     title: 'IEDC Sahrdaya Website',
-    description: "The official web portal for the Innovation and Entrepreneurship Development Cell (IEDC) at Sahrdaya College. It serves as a hub for activities, events, and resources related to innovation and entrepreneurship, providing easy access to information about IEDC's initiatives and programs.",
+    description: "The official web portal for the Innovation and Entrepreneurship Development Cell (IEDC) at Sahrdaya College. It serves as a hub for activities, events, and resources related to innovation and entrepreneurship, providing easy access to information about IEDC &apos initiatives and programs.",
     image: '/iedc_website.png', // You might want to use a specific image from your project
     tags: ['Next.js', 'Tailwind CSS', 'Firebase'],
     liveUrl: 'https://www.iedcsahrdaya.co.in/', // Replace with the actual live URL
