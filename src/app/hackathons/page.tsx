@@ -5,12 +5,24 @@ import { motion } from 'framer-motion';
 
 const hackathons = [
   {
+    name: 'Demo Hackathon Project',
+    description: 'A hackathon entry with all three links: GitHub, LinkedIn, and Live Demo.',
+    achievement: '🏅 Demo Award',
+    image: '/hackathon1-placeholder.svg',
+    technologies: ['React', 'Node.js', 'Socket.io'],
+    githubUrl: 'https://github.com/yourusername/demo-hackathon',
+    linkedinUrl: 'https://linkedin.com/in/yourusername',
+    liveUrl: 'https://demo-hackathon.example.com',
+    date: 'July 2025',
+  },
+  {
     name: 'Tech Innovation Hackathon 2025',
     description: 'Built a real-time collaboration platform for remote teams using WebRTC and WebSocket.',
     achievement: '🏆 First Place',
     image: '/hackathon1-placeholder.svg',
     technologies: ['React', 'Node.js', 'WebRTC', 'Socket.io'],
-    projectUrl: 'https://github.com/yourusername/hackathon-project1',
+    githubUrl: 'https://github.com/yourusername/hackathon-project1',
+    linkedinUrl: '',
     date: 'June 2025',
   },
   {
@@ -19,7 +31,8 @@ const hackathons = [
     achievement: '🎯 Best Innovation Award',
     image: '/hackathon2-placeholder.svg',
     technologies: ['Python', 'TensorFlow', 'FastAPI', 'MongoDB'],
-    projectUrl: 'https://github.com/yourusername/hackathon-project2',
+    githubUrl: '',
+    linkedinUrl: 'https://linkedin.com/in/yourusername',
     date: 'March 2025',
   },
 ];
@@ -68,27 +81,28 @@ export default function Hackathons() {
                   </span>
                 ))}
               </div>
-              <a
-                href={hackathon.projectUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300 font-medium inline-flex items-center"
-              >
-                View Project
-                <svg
-                  className="w-4 h-4 ml-1"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
-                  />
-                </svg>
-              </a>
+              <div className="flex gap-4">
+                {hackathon.githubUrl && (
+                  <a
+                    href={hackathon.githubUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-gray-600 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-300 font-medium inline-flex items-center"
+                  >
+                    GitHub
+                  </a>
+                )}
+                {hackathon.linkedinUrl && (
+                  <a
+                    href={hackathon.linkedinUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-blue-700 hover:text-blue-900 dark:text-blue-300 dark:hover:text-blue-500 font-medium inline-flex items-center"
+                  >
+                    LinkedIn
+                  </a>
+                )}
+              </div>
             </div>
           </motion.div>
         ))}
