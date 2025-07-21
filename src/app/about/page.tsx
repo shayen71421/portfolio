@@ -3,9 +3,26 @@
 import { motion } from 'framer-motion';
 
 const skills = [
-  { category: 'Frontend', items: ['React', 'Next.js', 'TypeScript', 'Tailwind CSS'] },
-  { category: 'Backend', items: ['Node.js', 'Express', 'PostgreSQL', 'MongoDB'] },
-  { category: 'Tools', items: ['Git', 'VS Code', 'Docker', 'AWS'] },
+  {
+    category: 'Programming Languages',
+    items: ['Java', 'JavaScript', 'Python', 'C', 'C++'],
+  },
+  {
+    category: 'Frontend',
+    items: ['React', 'Next.js', 'TypeScript', 'Tailwind CSS', 'HTML5', 'CSS3'],
+  },
+  {
+    category: 'Backend',
+    items: ['Node.js', 'Express', 'SpringBoot'],
+  },
+  {
+    category: 'Databases & DevOps',
+    items: ['PostgreSQL', 'MongoDB', 'MySQL', 'Docker', 'Apache'],
+  },
+  {
+    category: 'Tools',
+    items: ['Git', 'VS Code', 'AWS'],
+  },
 ];
 
 export default function About() {
@@ -20,17 +37,12 @@ export default function About() {
         
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
           <div className="space-y-6">
-            <h2 className="text-2xl font-semibold">Background</h2>
             <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
-              I'm a passionate Full Stack Developer with a focus on creating beautiful,
-              functional, and user-friendly applications. With several years of
-              experience in web development, I enjoy turning complex problems into
-              simple, elegant solutions.
+              I’m a B.Tech Computer Science student with a passion for AI, ethical technology, and open-source development. I specialize in Java, Python, and web development, focusing on creating innovative and sustainable solutions to real-world problems.
             </p>
             <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
               When I'm not coding, you can find me exploring new technologies,
-              contributing to open-source projects, or sharing my knowledge through
-              technical writing and mentoring.
+              contributing to open-source projects, or just doing a Stand-Up.
             </p>
           </div>
 
@@ -61,6 +73,7 @@ export default function About() {
                 </motion.div>
               ))}
             </div>
+
           </div>
         </div>
       </motion.div>
