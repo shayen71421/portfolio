@@ -45,6 +45,14 @@ const hackathons = [
     githubUrl: 'https://github.com/shayen71421/sNARKnAV',
     date: 'November 2024',
   },
+  {
+   name: 'TechXInfinia Hackathon 2024',
+  description: 'Participated in the hackathon as part of TechXInfinia conducted by IEEE Sahrdaya SB, held from 27th September to 29th September, 2024.',
+  achievement: 'Runner-up(General Track)',
+  image: '/Hackathon.JPG',
+  technologies: ["Python","JavaScript","NFC"],
+  date: 'September 2024', 
+  },
 ];
 
 export default function Hackathons() {
