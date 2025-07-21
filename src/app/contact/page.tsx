@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import emailjs from '@emailjs/browser';
 import { motion } from 'framer-motion';
 
 export default function Contact() {
@@ -9,11 +10,27 @@ export default function Contact() {
     email: '',
     message: '',
   });
+  const [status, setStatus] = useState<'idle' | 'sending' | 'success' | 'error'>('idle');
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // Add your form submission logic here
-    console.log('Form submitted:', formData);
+    setStatus('sending');
+    try {
+      await emailjs.send(
+        'service_r9r72wr', // replace with your EmailJS service ID
+        'template_aeby2ng', // replace with your EmailJS template ID
+        {
+          from_name: formData.name,
+          from_email: formData.email,
+          message: formData.message,
+        },
+        'wp6h-PLWQ4vEJV94q' // replace with your EmailJS public key
+      );
+      setStatus('success');
+      setFormData({ name: '', email: '', message: '' });
+    } catch {
+      setStatus('error');
+    }
   };
 
   return (
@@ -26,7 +43,10 @@ export default function Contact() {
       >
         <h1 className="text-4xl font-bold mb-8">Contact Me</h1>
         <div className="bg-white dark:bg-gray-800 rounded-lg p-8 shadow-lg">
-          <form onSubmit={handleSubmit} className="space-y-6">
+          {status === 'success' ? (
+            <div className="text-green-600 dark:text-green-400 text-lg font-semibold mb-6">Thank you! Your message has been sent.</div>
+          ) : (
+            <form onSubmit={handleSubmit} className="space-y-6">
             <div>
               <label
                 htmlFor="name"
@@ -86,43 +106,56 @@ export default function Contact() {
             </div>
             <button
               type="submit"
-              className="w-full px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors"
+              className="w-full px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors disabled:opacity-60"
+              disabled={status === 'sending'}
             >
-              Send Message
+              {status === 'sending' ? 'Sending...' : 'Send Message'}
             </button>
           </form>
+          )}
           <div className="mt-8 pt-8 border-t border-gray-200 dark:border-gray-700">
             <h2 className="text-xl font-semibold mb-4">Other Ways to Connect</h2>
             <div className="space-y-2">
               <p className="text-gray-600 dark:text-gray-300">
                 Email:{' '}
                 <a
-                  href="mailto:your.email@example.com"
+                  href="mailto:shayen71421@gmail.com"
                   className="text-blue-600 dark:text-blue-400 hover:underline"
                 >
-                  your.email@example.com
+                  shayen71421@gmail.com
                 </a>
               </p>
               <p className="text-gray-600 dark:text-gray-300">
                 LinkedIn:{' '}
                 <a
-                  href="https://linkedin.com/in/yourusername"
+                  href="https://www.linkedin.com/in/shayen-thomas-b78b02302/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-blue-600 dark:text-blue-400 hover:underline"
                 >
-                  linkedin.com/in/yourusername
+                  linkedin.com/in/shayen-thomas-b78b02302
                 </a>
               </p>
               <p className="text-gray-600 dark:text-gray-300">
                 GitHub:{' '}
                 <a
-                  href="https://github.com/yourusername"
+                  href="https://github.com/shayen71421"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-blue-600 dark:text-blue-400 hover:underline"
                 >
-                  github.com/yourusername
+                  github.com/shayen71421
+                </a>
+              </p>
+              <p className="text-gray-600 dark:text-gray-300">
+                Instagram:{' '}
+                <a
+                  href="https://www.instagram.com/_.shayen_thomas._/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-blue-600 dark:text-blue-400 hover:underline"
+                >
+                  instagram.com/_.shayen_thomas._/
                 </a>
               </p>
             </div>
