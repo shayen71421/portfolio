@@ -38,10 +38,10 @@ export default function About() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
           <div className="space-y-6">
             <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
-              I’m a B.Tech Computer Science student with a passion for AI, ethical technology, and open-source development. I specialize in Java, Python, and web development, focusing on creating innovative and sustainable solutions to real-world problems.
+              I&apos;m a B.Tech Computer Science student with a passion for AI, ethical technology, and open-source development. I specialize in Java, Python, and web development, focusing on creating innovative and sustainable solutions to real-world problems.
             </p>
             <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
-              When I'm not coding, you can find me exploring new technologies,
+              When I&apos;m not coding, you can find me exploring new technologies,
               contributing to open-source projects, or just doing a Stand-Up.
             </p>
           </div>
