@@ -17,11 +17,11 @@ const skills = [
   },
   {
     category: 'Databases & DevOps',
-    items: ['PostgreSQL', 'MongoDB', 'MySQL', 'Docker', 'Apache'],
+    items: ['PostgreSQL', 'MongoDB', 'MySQL', 'Docker', 'Apache','Firebase'],
   },
   {
     category: 'Tools',
-    items: ['Git', 'VS Code', 'AWS'],
+    items: ['Git', 'Figma', 'AWS','Photoshop', 'Illustrator','After Effects'],
   },
 ];
 
@@ -41,7 +41,7 @@ export default function About() {
             </p>
             <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
               When I&apos;m not coding, you can find me exploring new technologies,
-              contributing to open-source projects, or just doing a Stand-Up.
+              contributing to open-source projects, or just staring into oblivion.
             </p>
           </div>
 
