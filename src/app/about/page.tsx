@@ -33,10 +33,9 @@ export default function About() {
         animate={{ opacity: 1 }}
         transition={{ duration: 0.5 }}
       >
-        <h1 className="text-4xl font-bold mb-8">About Me</h1>
-        
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
-          <div className="space-y-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:min-h-[60vh]">
+          <div className="space-y-6 flex flex-col justify-center h-full">
+            <h1 className="text-4xl font-bold mb-8">About Me</h1>
             <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
               I&apos;m a B.Tech Computer Science student with a passion for AI, ethical technology, and open-source development. I specialize in Java, Python, and web development, focusing on creating innovative and sustainable solutions to real-world problems.
             </p>
@@ -46,7 +45,7 @@ export default function About() {
             </p>
           </div>
 
-          <div className="space-y-8">
+          <div className="space-y-8 flex flex-col justify-center h-full">
             <h2 className="text-2xl font-semibold">Skills</h2>
             <div className="space-y-6">
               {skills.map((skillGroup) => (
