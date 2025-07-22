@@ -113,53 +113,7 @@ export default function Contact() {
             </button>
           </form>
           )}
-          <div className="mt-8 pt-8 border-t border-gray-200 dark:border-gray-700">
-            <h2 className="text-xl font-semibold mb-4">Other Ways to Connect</h2>
-            <div className="space-y-2">
-              <p className="text-gray-600 dark:text-gray-300">
-                Email:{' '}
-                <a
-                  href="mailto:shayen71421@gmail.com"
-                  className="text-blue-600 dark:text-blue-400 hover:underline"
-                >
-                  shayen71421@gmail.com
-                </a>
-              </p>
-              <p className="text-gray-600 dark:text-gray-300">
-                LinkedIn:{' '}
-                <a
-                  href="https://www.linkedin.com/in/shayen-thomas-b78b02302/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-blue-600 dark:text-blue-400 hover:underline"
-                >
-                  linkedin.com/in/shayen-thomas-b78b02302
-                </a>
-              </p>
-              <p className="text-gray-600 dark:text-gray-300">
-                GitHub:{' '}
-                <a
-                  href="https://github.com/shayen71421"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-blue-600 dark:text-blue-400 hover:underline"
-                >
-                  github.com/shayen71421
-                </a>
-              </p>
-              <p className="text-gray-600 dark:text-gray-300">
-                Instagram:{' '}
-                <a
-                  href="https://www.instagram.com/_.shayen_thomas._/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-blue-600 dark:text-blue-400 hover:underline"
-                >
-                  instagram.com/_.shayen_thomas._/
-                </a>
-              </p>
-            </div>
-          </div>
+          {/* Social/contact links removed as per user request. Only the form remains. */}
         </div>
       </motion.div>
     </div>
