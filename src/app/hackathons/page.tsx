@@ -30,7 +30,7 @@ const hackathons: Hackathon[] = [
  {
   name: 'VITALS 24 (INFINIA 2.0)',
   description: 'Built an AI-powered deepfake-detection solution in 24 hours and secured 2nd Runner-Up among 271+ teams at VITALS 24, showcasing innovation and teamwork under pressure.',
-  achievement: '🥈 2nd Runner-Up — VITALS 24',
+  achievement: '2nd Runner-Up',
   image: '/vitals.jpg',
   technologies: ['YOLOv3', 'PyTorch', 'OpenCV', 'React'],
   date: 'November 2025',
