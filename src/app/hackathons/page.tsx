@@ -26,6 +26,15 @@ const hackathons: Hackathon[] = [
    // liveUrl: 'https://demo-hackathon.example.com',
    // date: 'July 2025',
  // },
+
+ {
+  name: 'VITALS 24 (INFINIA 2.0)',
+  description: 'Built an AI-powered deepfake-detection solution in 24 hours and secured 2nd Runner-Up among 271+ teams at VITALS 24, showcasing innovation and teamwork under pressure.',
+  achievement: '🥈 2nd Runner-Up — VITALS 24',
+  image: '/vitals.jpg',
+  technologies: ['YOLOv3', 'PyTorch', 'OpenCV', 'React'],
+  date: 'November 2025',
+},
   
  {
      name: 'ICTAK Techathlon 2024-25',
@@ -34,8 +43,8 @@ const hackathons: Hackathon[] = [
   image: '/ictak-techathlon-2024-25.jpg',
   technologies: ['Real World Problem Tackling', 'Project Management', 'Project Management'],
   githubUrl: 'https://github.com/shayen71421/fyugp',
-  linkedinUrl: '',
-  date: 'April 5, 2025',
+  linkedinUrl: 'https://www.linkedin.com/posts/shayen-thomas_honoured-to-be-recognised-as-second-runner-up-ugcPost-7367222807216214016-neZS?utm_source=share&utm_medium=member_desktop&rcm=ACoAAE1n-AwBNoFAOtHZgvoDgIAbrsBwV1VSBWQ',
+  date: 'April 2025',
   }, 
 
   {
