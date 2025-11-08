@@ -33,6 +33,7 @@ const hackathons: Hackathon[] = [
   achievement: '2nd Runner-Up',
   image: '/vitals.jpg',
   technologies: ['YOLO', 'PyTorch', 'OpenCV'],
+  linkedinUrl: 'https://www.linkedin.com/posts/ieeesahrdaya_infiniaabr20-vitals24-hackathon-activity-7373719975129137152-z4_V?utm_source=share&utm_medium=member_desktop&rcm=ACoAAE1n-AwBNoFAOtHZgvoDgIAbrsBwV1VSBWQ',
   date: 'November 2025',
 },
   
