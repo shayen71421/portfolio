@@ -43,7 +43,7 @@ export default function Home() {
               <a href="https://github.com/shayen71421" target="_blank" rel="noopener noreferrer" title="GitHub" className="hover:scale-110 transition-transform">
                 <img src="/github.png" alt="GitHub" className="w-8 h-8" />
               </a>
-              <a href="https://www.instagram.com/_.shayen_thomas._/" target="_blank" rel="noopener noreferrer" title="Instagram" className="hover:scale-110 transition-transform">
+              <a href="https://www.instagram.com/sh4yen_/" target="_blank" rel="noopener noreferrer" title="Instagram" className="hover:scale-110 transition-transform">
                 <img src="/instagram.png" alt="Instagram" className="w-8 h-8" />
               </a>
             </div>
