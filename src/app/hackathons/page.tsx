@@ -32,7 +32,7 @@ const hackathons: Hackathon[] = [
   description: 'Built an AI-powered deepfake-detection solution in 24 hours and secured 2nd Runner-Up among 271+ teams at VITALS 24, showcasing innovation and teamwork under pressure.',
   achievement: '2nd Runner-Up',
   image: '/vitals.jpg',
-  technologies: ['YOLO', 'PyTorch', 'OpenCV', 'React'],
+  technologies: ['YOLO', 'PyTorch', 'OpenCV'],
   date: 'November 2025',
 },
   
