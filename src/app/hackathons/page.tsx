@@ -29,7 +29,7 @@ const hackathons: Hackathon[] = [
 
  {
   name: 'VITALS 24 (INFINIA 2.0)',
-  description: 'Built an AI-powered deepfake-detection solution in 24 hours and secured 2nd Runner-Up among 271+ teams at VITALS 24, showcasing innovation and teamwork under pressure.',
+  description: 'Participated in VITALS 24, a 24-hour national hackathon that brought together 271+ teams from across India.',
   achievement: '2nd Runner-Up',
   image: '/vitals.jpg',
   technologies: ['YOLO', 'PyTorch', 'OpenCV'],
@@ -59,7 +59,7 @@ const hackathons: Hackathon[] = [
   },
   {
   name: 'PyHack Innovate 2024',
-  description: 'Developed a Python desktop app to track and alert users about expiring medicines using Tkinter and SQLite, in a hackathon for first-year students',
+  description: 'Participated in PyHack Innovate 2024, a department-level hackathon for first-year students focused on sustainability.',
   achievement: 'Best Overall & Best Department Team',
   image: '/pyhack.jpg',
   technologies: ['Tkinter', 'SQLite', 'Algorithm Design'],
