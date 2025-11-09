@@ -58,6 +58,16 @@ const hackathons: Hackathon[] = [
     date: 'March 2025',
   },
   {
+  name: 'PyHack Innovate 2024',
+  description: 'Developed a Python desktop app to track and alert users about expiring medicines using Tkinter and SQLite, in a hackathon for first-year students',
+  achievement: 'Best Overall & Best Department Team',
+  image: '/pyhack.jpg',
+  technologies: ['Tkinter', 'SQLite', 'Algorithm Design'],
+  githubUrl: 'https://github.com/shayen71421/RYMEDS',
+ // linkedinUrl: 'https://www.linkedin.com/in/shayenthomas/',
+  date: 'November 2024',
+},
+  {
      name: 'Useless Projects 2024',
   description: 'Participated in a 24-hour makeathon conducted by TinkerHub at Sahrdaya College of Engineering & Technology, Kodakara.',
   achievement: 'Project was shorlisted in the top 150 out of 800+ projects.',
